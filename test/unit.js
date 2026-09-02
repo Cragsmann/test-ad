@@ -11,6 +11,7 @@ test('Unit: handles an HTTP GET', async t => {
   const result = await func({ ...fixture, method: 'GET', query: { name: 'tiger' } });
   t.deepEqual(result, { body: 'OK', headers: { 'content-type': 'text/plain' } });
   t.end();
+  
 });
 
 test('Unit: handles an HTTP POST', async t => {
