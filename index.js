@@ -16,6 +16,7 @@
  *
  * See: https://github.com/knative/func/blob/main/docs/function-developers/nodejs.md#the-context-object
  */
+
 const handle = async (context, body) => {
   // YOUR CODE HERE
   context.log.info("query", context.query);
